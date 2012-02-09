@@ -133,6 +133,10 @@ defaults write com.apple.iTunes disablePingSidebar -bool true
 # Disable all the other Ping stuff in iTunes
 defaults write com.apple.iTunes disablePing -bool true
 
+# Show hidden files in TextMate sidebar -> https://gist.github.com/728445
+defaults write com.macromates.textmate OakFolderReferenceFolderPattern -string "!.*/(.git|CVS|_darcs|_MTN|\{arch\}|blib|.*~\.nib|.*\.(framework|app|pbproj|pbxproj|xcode(proj)?|bundle))$"
+defaults write com.macromates.textmate OakFolderReferenceFilePattern -string "!(/\.(?!\W*)[^/]*|\.(gitkeep|DS_Store|tmproj|o|pyc)|/Icon\r|/svn-commit(\.[2-9])?\.tmp)$"
+
 # Disable send and reply animations in Mail.app
 # defaults write com.apple.Mail DisableReplyAnimations -bool true
 # defaults write com.apple.Mail DisableSendAnimations -bool true
