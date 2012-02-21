@@ -137,6 +137,9 @@ defaults write com.apple.iTunes disablePing -bool true
 defaults write com.macromates.textmate OakFolderReferenceFolderPattern -string "!.*/(.git|CVS|_darcs|_MTN|\{arch\}|blib|.*~\.nib|.*\.(framework|app|pbproj|pbxproj|xcode(proj)?|bundle))$"
 defaults write com.macromates.textmate OakFolderReferenceFilePattern -string "!(/\.(?!\W*)[^/]*|\.(gitkeep|DS_Store|tmproj|o|pyc)|/Icon\r|/svn-commit(\.[2-9])?\.tmp)$"
 
+# set text wrap widths
+defaults write com.macromates.textmate OakWrapColumns '( 40, 72, 78 )'
+
 # Disable send and reply animations in Mail.app
 # defaults write com.apple.Mail DisableReplyAnimations -bool true
 # defaults write com.apple.Mail DisableSendAnimations -bool true
