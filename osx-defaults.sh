@@ -63,7 +63,7 @@ defaults write NSGlobalDomain ApplePressAndHoldEnabled -bool false
 defaults write NSGlobalDomain KeyRepeat -int 0
 
 # Disable auto-correct
-# defaults write NSGlobalDomain NSAutomaticSpellingCorrectionEnabled -bool false
+defaults write NSGlobalDomain NSAutomaticSpellingCorrectionEnabled -bool false
 
 # Disable window animations
 # defaults write NSGlobalDomain NSAutomaticWindowAnimationsEnabled -bool false
